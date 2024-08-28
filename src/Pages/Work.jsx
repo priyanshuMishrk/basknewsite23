@@ -26,10 +26,21 @@ import pepsLogo from '../Images/pepsLogo.png'
 import sheafferLogo from '../Images/sheafferLogo.png'
 import sheaffer1 from '../Images/sheaffer1.png'
 import sheaffer2 from '../Images/sheaffer2.png'
+import { useNavigate } from "react-router-dom";
 
 
 function Work() {
   const [currentImg, setCurrentImg] = useState('no')
+
+  const [current, setCurrent] = useState('')
+    const nava = useNavigate()
+    function nextPage(){
+        if (current != ''){
+                nava('/team')
+        } else {
+            alert('Please give your inputs')
+        }
+    }
 
   function close() {
     setCurrentImg('no')
@@ -208,15 +219,19 @@ function Work() {
 
       <div className="nextPageTakerrr">
             <img src={baskLogo} className="backLogoooo" alt="" />
+        {/* <div className="lllsassd">
+            <div></div>
+        </div> */}
+
 
             <div className="body ln">
                 Now that you have seen our work,<br/>
                 leave some love (Or hate).
             </div>
 
-            <textarea rows={2} type="text"></textarea>
+            <textarea rows={2} type="text" onChange={(e) => setCurrent(e.value)}></textarea>
 
-            <div className="buttonAtHome xb">
+            <div className="buttonAtHome xb" onClick={nextPage}>
                     <div class="bottom-left"></div>
                     <div class="bottom-right"></div>
                     Submit

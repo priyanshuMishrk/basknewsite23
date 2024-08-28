@@ -5,16 +5,21 @@ import cp from '../Images/prabhakar.png'
 import suresh from '../Images/suresh.png'
 import sonicaa from '../Images/sonica.png'
 import gowri from '../Images/gouri.png'
+import { useNavigate } from "react-router-dom";
 
 
 
 function Teams() {
 
+    const naa = useNavigate()
 
     return (
         <div>
             <div className="firstPageInTeams xb">
-                <img src={baskLogo} alt="" />
+                    <img src={baskLogo} alt="" />
+                {/* <div className="aksdjiad">
+                    <div></div>
+                </div> */}
 
                 <div>
                     We make <br />
@@ -109,7 +114,7 @@ function Teams() {
 
                 </div>
 
-                <div className="whatsssssnext xb">
+                <div className="whatsssssnext xb" onClick={() => {naa('/vision')}}>
                 What’s next?
                 </div>
 

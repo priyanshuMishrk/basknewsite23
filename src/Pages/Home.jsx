@@ -1,12 +1,23 @@
 import React, { useEffect, useState } from "react";
 import baskLogo from '../Images/bask.png'
+import { useNavigate } from "react-router-dom";
 function Home() {
+    const [current, setCurrent] = useState('')
+    const nava = useNavigate()
+    function nextPage(){
+        if (current != ''){
+                nava('work')
+        } else {
+            alert('Please give your inputs')
+        }
+    }
 
 
     return (
         <div>
             <div className="headForHome">
                 <img src={baskLogo} className='baskLogo' alt="" />
+                <div></div>
             </div>
 
             <div className="textOnHomePage">
@@ -34,9 +45,9 @@ function Home() {
                     Write something (anything) in the space below and click the submit button to see some exciting work.
                 </div>
 
-                <textarea rows={2} type="text" className="" />
+                <textarea rows={2} onChange={(e) => setCurrent(e.value)} type="text" className="" />
 
-                <div className="buttonAtHome xb">
+                <div className="buttonAtHome xb" onClick={nextPage}>
                     <div class="bottom-left"></div>
                     <div class="bottom-right"></div>
                     Submit

@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './Media.css'
 import Home from './Pages/Home';
 import Work from './Pages/Work.jsx';
 import Teams from './Pages/Teams.jsx';
@@ -20,9 +21,9 @@ function App() {
               <Route path="/work" element={<Work/>}/>
               <Route path="/team" element={<Teams/>}/>
               <Route path="/vision" element={<Vision/>}/>
-              <Route path="/mission" element={<Mission/>}/>
+              {/* <Route path="/mission" element={<Mission/>}/>
               <Route path="/belief" element={<Belief/>}/>
-              <Route path='/contact' element={<Csend/>} />
+              <Route path='/contact' element={<Csend/>} /> */}
               <Route path='/contactUs' element={<Cget/>} />
 
             </Routes>

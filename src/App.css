@@ -48,11 +48,21 @@
 }
 
 .headForHome img {
-  width: 77px;
-  height: 81px;
+  width: 5vw;
   position: absolute;
-  left: 800px;
+  left: 60%;
   top: 0vw !important;
+  z-index: 1;
+}
+
+.headForHome div {
+  position: absolute;
+  left: 46.5%;
+  height: 35.3vw;
+  transform: rotate(49deg);
+  width: 0.2vw;
+  top: -6.5vw;
+  border-right: 1px solid black;
 }
 
 .textOnHomePage {
@@ -109,6 +119,7 @@
   font-size: 2.5vw;
   margin-top: 5vw;
   padding:1vw 4vw;
+  margin-bottom: 2vw;
 }
 
 .buttonAtHome::before,
@@ -554,6 +565,7 @@
   flex-direction: column;
   position: relative;
   gap: 1.5vw;
+  overflow: hidden;
 }
 
 .nextPageTakerrr img {
@@ -940,3 +952,50 @@ textarea::-ms-input-placeholder {
   height: 88%;
   transform: rotate(58deg);
 }
+
+/* .lllsassd{
+  position: relative;
+}
+
+.nextPageTakerrr img {
+  width: 5vw;
+  position: absolute;
+  top: -5vw;
+  right: -13vw;
+  z-index: 1;
+} */
+
+/* 
+.lllsassd div {
+  height: 15.5vw;
+  position: absolute;
+  width: 1px;
+  border-right: 1px solid black;
+  top: -7vw;
+  rotate: 34deg;
+  right: -4.8vw;
+}
+
+.aksdjiad div {
+  height: 80vh;
+  position: absolute;
+  width: 1px;
+  border-right: 1px solid black;
+  rotate: 34deg;
+  top: -4vw;
+  right: -54vw !important;
+  left: unset;
+}
+
+.aksdjiad{
+  position: relative !important;
+  width: 1px;
+  height: 1px;
+}
+
+.firstPageInTeams img {
+  width: 5vw;
+  position: absolute;
+  top: 0;
+  right: -70vw;
+} */

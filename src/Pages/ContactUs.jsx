@@ -14,9 +14,6 @@ are
 Here
             </div>
             
-            <div className="lineeeeeeeeeeeeeeeecu">
-                
-            </div>
 
             <div className="addressNameE">
                 <div className="noT">

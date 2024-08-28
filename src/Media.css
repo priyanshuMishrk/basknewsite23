@@ -1,0 +1,904 @@
+@media (max-width: 500px) {
+    .textOnHomePage .head {
+        font-size: 18vw !important;
+        letter-spacing: 0px !important;
+        text-align: center !important;
+        line-height: 15vw !important;
+    }
+
+    .textOnHomePage .bodt {
+        color: #B5B5B5;
+        font-size: 3.5vw;
+        width: 90%;
+        text-align: center;
+        font-weight: 900;
+        margin-top: 2vw;
+    }
+
+    .nextPageTaker {
+        margin-top: 7vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .headForHome div {
+        position: absolute;
+        left: 56.5%;
+        height: 31.3vw;
+        transform: rotate(18deg);
+        width: 0.2vw;
+        top: -6.5vw;
+        border-right: 1px solid black;
+    }
+
+    .nextPageTaker .head {
+        font-size: 5.5vw;
+        margin-bottom: 2.5vw;
+    }
+
+
+    .nextPageTaker .body {
+        font-size: 3vw;
+        width: 81%;
+        text-align: center;
+        color: #777777;
+    }
+
+
+    .nextPageTaker textarea {
+        font-size: 2.5vw;
+        width: 81%;
+        margin-top: 5vw;
+        resize: none;
+        outline: none;
+    }
+
+
+    .buttonAtHome::before, .buttonAtHome::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 7px;
+        border: 1px solid black;
+    }
+
+    .buttonAtHome::before {
+        bottom: 0;
+        right: 0;
+        border-top: none;
+        border-left: none;
+    }
+
+    .buttonAtHome::after {
+        top: 0;
+        left: 0;
+        border-bottom: none;
+        border-right: none;
+    }
+
+    .buttonAtHome .bottom-left {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 4px;
+        height: 7px;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+    }
+
+    .buttonAtHome .bottom-right {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4px;
+        height: 7px;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    .buttonAtHome {
+        position: relative;
+        font-size: 4.5vw;
+        margin-top: 6vw;
+        padding: 2.5vw 6vw;
+        margin-bottom: 2vw;
+    }
+
+    .CaseStudy1 .Studies {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .CaseStudy1 .Studies .textt {
+        color: #B5B5B5;
+        padding-left: 0;
+        font-size: 4vw;
+        padding-top: 14vw;
+        width: 85%;
+        margin-left: 10%;
+        border-top: none;
+        text-align: right;
+        padding-bottom: 5vw;
+        border-left: 1px solid black;
+    }
+
+    .c1img {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .leviLogo {
+        width: 20vw;
+        margin-top: 2vw;
+    }
+
+    .baskLogoC1 {
+        margin-top: 0vw;
+        width: 11vw;
+        margin-bottom: -4px;
+        margin-left: 10%;
+        border-left: 1px solid black;
+    }
+
+    .CaseStudy2 .Studies {
+        flex-direction: column;
+    }
+
+    .CaseStudy2 .Studies .textt {
+        color: #B5B5B5;
+        padding-left: 32%;
+        font-size: 3vw;
+        padding-top: 2vw;
+        min-width: 52%;
+        max-width: 45%;
+        border-top: none;
+        margin-left: 10%;
+        text-align: right;
+        border-left: 1px solid black;
+        padding-bottom: 5vw;
+    }
+
+    .c2img {
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+
+    .CaseStudy2 {
+        position: relative;
+    }
+
+    .skyeelogoC1{
+        position: absolute;
+        bottom: 5vw;
+        left: 10%;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .CaseStudy3 .row1 {
+        display: flex;
+        align-items: normal;
+        margin-left: 15%;
+        padding-top: 50%;
+        position: relative;
+    }
+
+    .CaseStudy3 .row1 img:nth-child(1) {
+        position: absolute;
+        border-bottom: none;
+        top: 0;
+        padding-bottom: 53%;
+        border-left: 1px solid black;
+        width: 11vw;
+    }
+
+
+    .CaseStudy3 .row1 img:nth-child(2) {
+        position: absolute;
+        top: 86.5%;
+        left: -15vw;
+        width: 15vw;
+    }
+
+    .CaseStudy3 .row1 img:nth-child(5) {
+        width: 13vw;
+        height: auto;
+        align-self: flex-end;
+        justify-self: end;
+        margin-left: 0vw;
+        position: absolute;
+        left: -14vw;
+        top: 103%;
+    }
+
+    .CaseStudy3 {
+        position: relative;
+    }
+
+    .text234kk {
+        margin-top: 4vw;
+        margin-left: 4vw;
+        color: #B5B5B5;
+        font-size: 3vw;
+        width: 53%;
+        align-self: flex-start;
+        position: absolute;
+        top: 12%;
+        left: 40%;
+        text-align: right;
+    }
+
+    .CaseStudy3 .row2 img {
+        width: 20vw;
+        height: auto;
+        margin-left: 0;
+        align-self: flex-start;
+        position: absolute;
+        left: 55.01%;
+        top: 37%;
+    }
+
+    .CaseStudy3 .row2 img:nth-child(3){
+        width: 20vw;
+        height: auto;
+        margin-left: 0;
+        align-self: flex-start;
+        position: absolute;
+        left: 75.01%;
+        top: 37%;
+    }
+
+    .CaseStudy3 .row2 img:nth-child(3) {
+        width: 20vw;
+        height: auto;
+        margin-left: 0;
+        align-self: flex-start;
+        position: absolute;
+        left: 15.01%;
+        top: 56%;
+    }
+
+    .CaseStudy3 .row1 img:nth-child(3) {
+        width: 25vw;
+        height: auto;
+    }
+
+    .CaseStudy3 .row1 img:nth-child(4) {
+        width: 25vw;
+        height: auto;
+    }
+
+    .CaseStudy3 .row2 img {
+        width: 25vw;
+        height: auto;
+        margin-left: 0;
+        align-self: flex-start;
+        position: absolute;
+        left: 65.1%;
+        top: 37%;
+    }
+
+    .CaseStudy3 .row2 img:nth-child(3) {
+        width: 25vw;
+        height: auto;
+        margin-left: 0;
+        align-self: flex-start;
+        position: absolute;
+        left: 15.01%;
+        top: 60.8%;
+    }
+
+    .CaseStudy3 .row2 {
+        display: flex;
+        align-items: end;
+        position: relative;
+    }
+
+    .text234kk {
+        /* margin-top: 4vw; */
+        /* margin-left: 4vw; */
+        color: #B5B5B5;
+        font-size: 3vw;
+        width: 55vw;
+        align-self: flex-start;
+        position: absolute;
+        top: -69vw;
+        left: 37vw;
+        text-align: right;
+    }
+
+
+    .CaseStudy3 .row2 img {
+        width: 25vw;
+        height: auto;
+        margin-left: 0;
+        align-self: flex-start;
+        position: absolute;
+        left: 65%;
+        top: -32vw;
+    }
+
+    .CaseStudy3 .row1 {
+        display: flex;
+        align-items: normal;
+        margin-left: 15%;
+        padding-top: 68%;
+        position: relative;
+    }
+
+    .CaseStudy3 .row1 img:nth-child(1) {
+        position: absolute;
+        border-bottom: none;
+        top: 0;
+        padding-bottom: 67%;
+        border-left: 1px solid black;
+        width: 11vw;
+    }
+
+    .CaseStudy4 .column1 .row2 img {
+        width: 20vw;
+        height: auto;
+    }
+
+    .CaseStudy4 .column1 .row2 {
+        /* width: 60%; */
+        display: flex;
+        position: relative;
+        /* margin-top: 25%; */
+    }
+
+    .CaseStudy4 .column1 .row1 {
+        display: flex;
+        /* width: 60%; */
+        justify-content: space-between;
+        align-items: normal;
+    }
+
+    .CaseStudy4 .column1 .row1 img {
+        width: 20vw;
+        height: auto;
+        margin-top: 15vw;
+    }
+    .CaseStudy4 .column2 img:nth-child(1) {
+        width: 26vw;
+        height: auto;
+        margin-top: 23vw;
+        /* margin-left: 10vw; */
+    }
+
+    .CaseStudy4 .column1 .row1 {
+        display: flex;
+        width: 117%;
+        justify-content: space-between;
+        align-items: normal;
+    }
+
+    .CaseStudy4 .column2 img:nth-child(1) {
+        width: 26vw;
+        height: auto;
+        margin-top: 23vw;
+        margin-left: 9.5vw;
+    }
+
+    .CaseStudy4 .column1 .row2 div{
+        border-top: none;
+    }
+
+    .CaseStudy4 .column1 .row2 img:nth-child(1) {
+        width: 11vw;
+        position: absolute;
+        top: -47vw;
+        left: 82vw;
+        border-right: 1px solid black;
+        padding-bottom: 11.4vw;
+    }
+
+    .CaseStudy4 {
+        display: flex;
+        background-color: #f7f7f7;
+        padding-bottom: 2vw;
+        padding-top: 17vw;
+        position: relative;
+    }
+
+    .CaseStudy4 .column1 .row2 img:nth-child(1) {
+        width: 11vw;
+        position: absolute;
+        top: -64vw;
+        left: 82vw;
+        border-right: 1px solid black;
+        padding-bottom: 28.4vw;
+    }
+
+    .CaseStudy4 .column1 .row1 .textt {
+        color: #B5B5B5;
+        font-size: 3.5vw;
+        width: 60%;
+        margin-bottom: 3vw;
+        position: absolute;
+        top: 8vw;
+    }
+
+    .CaseStudy4 .column1 .row1 img {
+        width: 20vw;
+        height: auto;
+        margin-top: 15vw;
+        margin-left: 47vw;
+    }
+
+    .CaseStudy5 .column2 img {
+        width: 22vw;
+    }
+
+    .CaseStudy5 {
+        display: flex;
+        margin-bottom: 2vw;
+        position: relative;
+    }
+
+    .CaseStudy5 .column1 div:nth-child(1) img {
+        width: 5vw;
+        margin-top: 0;
+        margin-bottom: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    .CaseStudy5 .column2 img:nth-child(1) {
+        align-self: end;
+    }
+
+    .CaseStudy5 .column1 div:nth-child(1){
+        border-bottom: none;
+    }
+
+    .CaseStudy5 .column1 {
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+    }
+
+    .CaseStudy5 .column1 div:nth-child(1) img {
+        width: 11vw;
+        margin-top: 0;
+        margin-bottom: 0;
+        top: 0;
+        position: absolute;
+        left: 10%;
+        padding-bottom: 35.1vw;
+        border-left: 1px solid black;
+    }
+
+    .CaseStudy5 .column2 {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin-top: 24.2vw;
+    }
+
+    .CaseStudy5 .column3 img {
+        width: 27vw;
+    }
+
+    .CaseStudy5 .column3 {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin-top: 24.2vw;
+    }
+
+    .CaseStudy5 .column4 img {
+        width: 13vw;
+        margin-left: 3vw;
+        position: absolute;
+        left: 13vw;
+        top: 37vw;
+    }
+
+    .CaseStudy5 .column1 {
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+        position: relative;
+    }
+
+    .CaseStudy5 .column1 div:nth-child(1) img {
+        width: 11vw;
+        margin-top: 0;
+        margin-bottom: 0;
+        top: 0;
+        position: absolute;
+        left: 100%;
+        padding-bottom: 35.2vw;
+        border-left: 1px solid black;
+    }
+
+    .CaseStudy5 .column1 .texttty {
+        color: #B5B5B5;
+        font-size: 2.5vw;
+        padding: 1vw;
+        padding-left: 4vw;
+        position: absolute;
+        width: 40vw;
+        top: 70vw;
+        left: 8vw;
+    }
+
+    .CaseStudy5 .column3 {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin-top: 24.2vw;
+        margin-bottom: 30%;
+    }
+
+    .CaseStudy6 .column1 img {
+        width: 28vw;
+    }
+
+    .CaseStudy6 .column2 .row2 img:nth-child(1) {
+        width: 28vw;
+    }
+
+    .CaseStudy6 .column2 .row1 img {
+        align-self: flex-end;
+        position: absolute;
+        right: 3vw;
+        bottom: 0;
+        width: 5vw;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .CaseStudy6{
+        position: relative;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+
+    .CaseStudy6 .column2 .row2 img:nth-child(2) {
+        width: 17vw;
+        height: auto;
+        height: 10vw;
+        object-fit: contain;
+        align-self: flex-end;
+        /* margin-left: 4vw; */
+        /* margin-right: 20vw; */
+        position: absolute;
+        left: 10vw;
+        bottom: 5vw;
+    }
+
+    .CaseStudy6 .column2 .row1 {
+        border-bottom: none;
+    }
+
+    .CaseStudy6 .column2 {
+        width: max-content;
+    }
+
+    .CaseStudy6 .column2 .row1 img {
+        align-self: flex-end;
+        position: absolute;
+        right: -19vw;
+        bottom: 9.5vw;
+        width: 11vw;
+        padding-left: 53vw;
+        border-top: 1px solid black;
+    }
+
+    .CaseStudy6 .column2 .row2 .textt {
+        color: #B5B5B5;
+        font-size: 1.8vw;
+        text-align: right;
+        margin-top: 2vw;
+        position: absolute;
+        top: 4vw;
+        right: 15vw;
+    }
+
+    .CaseStudy6 .column2 .row1 img {
+        align-self: flex-end;
+        position: absolute;
+        right: -36vw;
+        bottom: 9.5vw;
+        width: 11vw;
+        padding-left: 53vw;
+        border-top: 1px solid black;
+    }
+
+    .CaseStudy6 .column2 .row2 .textt {
+        color: #B5B5B5;
+        font-size: 2.8vw;
+        text-align: left;
+        margin-top: 2vw;
+        position: absolute;
+        top: 6vw;
+        right: 33vw;
+    }
+
+    .nextPageTakerrr img {
+        width: 11vw;
+        position: absolute;
+        /* top: -33vw;
+        right: -13vw;
+        z-index: 1; */
+    }
+
+    .nextPageTakerrr .body {
+        font-size: 5.5vw;
+        text-align: center;
+        color: #777777;
+        margin-top: 4vw;
+    }
+
+    .lllsassd div {
+        height: 47.5vw;
+        position: absolute;
+        width: 1px;
+        border-right: 1px solid black;
+        top: -38vw;
+        rotate: 16deg;
+        right: 8.2vw;
+    }
+
+    /* .nextPageTakerrr img {
+        width: 11vw;
+        position: absolute;
+        top: -33vw;
+        right: -8vw;
+        z-index: 1;
+    } */
+
+    .nextPageTakerrr textarea {
+        font-size: 1.5vw;
+        width: 77%;
+        resize: none;
+        margin-top: 2vw;
+        outline: none;
+    }
+
+
+    .firstPageInTeams {
+        position: relative;
+        font-size: 40vw;
+        line-height: 33vw;
+        display: flex;
+        align-items: baseline;
+        justify-content: baseline;
+        height: 100vh;
+        border-bottom: 10px solid black;
+    }
+
+    .firstPageInTeams img {
+        width: 11vw;
+        position: absolute;
+        top: 0;
+        right: 30%;
+    }
+
+    .theTeam .member1 {
+        display: flex;
+        padding-left: 30%;
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .theTeam .member2 {
+        display: flex;
+        padding-left: 30%;
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .theTeam .member1 img {
+        width: 36vw;
+        height: 40vw;
+        object-fit: cover;
+        margin-right: 2vw;
+    }
+
+    .theTeam .member2 img {
+        width: 36vw;
+        height: 40vw;
+        object-fit: cover;
+        margin-right: 2vw;
+    }
+
+    .theTeam .bkloogo {
+        position: absolute;
+        top: 0;
+        left: 70%;
+        width: 10vw;
+    }
+
+    .theTeam .member1 .descr , .theTeam .member2 .descr{
+        margin-left: -10vw;
+    }
+
+    .theTeam .member1 .descr .namemme {
+        font-size: 10vw;
+    }
+
+    .theTeam .member2 .descr .namemme {
+        font-size: 10vw;
+    }
+
+    .theTeam .member1 .descr .position {
+        font-size: 6vw;
+    }
+
+    .theTeam .member2 .descr .position {
+        font-size: 6vw;
+    }
+
+    .uploadeer img {
+        position: absolute;
+        right: 30%;
+        width: 11vw;
+        top: 0;
+    }
+
+    .uploadeer .desccr {
+        display: flex;
+        align-items: unset;
+        padding-top: 52vw;
+        flex-direction: column;
+    }
+
+    .uploadeer .desccr .head {
+        font-size: 30vw;
+        line-height: 25vw;
+        margin-bottom: 5vw;
+    }
+
+    .uploadeer .desccr .linker {
+        text-decoration: underline;
+        margin-bottom: 29vw;
+        margin-left: 4vw;
+        font-size: 7vw;
+        cursor: pointer;
+    }
+
+    .whatsssssnext {
+        font-size: 6vw;
+        margin-left: 63%;
+        margin-top: 1.1vw;
+        margin-bottom: 4vw;
+    }
+
+    .g33 {
+        font-size: 31vw;
+        line-height: 27vw;
+        margin-top: 57vw;
+    }
+
+    .g55 {
+        color: #B5B5B5;
+        width: 46%;
+        font-size: 5vw;
+        margin-left: 40%;
+    }
+
+    .g330 {
+        display: flex;
+        flex-direction: column;
+        font-size: 38vw;
+        line-height: 30vw;
+        padding-top: 15vw;
+        margin-bottom: 5vw;
+    }
+
+    .c180 {
+        display: flex;
+        padding-top: 10vw;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .c180 .textt {
+        font-size: 28vw;
+        line-height: 27vw;
+        width: 100%;
+    }
+
+    .formToContact {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4vw;
+        margin-top: 10vw;
+    }
+
+    .c180 input {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+        width: 71vw;
+        font-size: 5.8vw;
+        margin-top: 0vw;
+    }
+
+    .c180 textarea {
+        outline: none;
+        resize: none;
+        width: 71vw;
+        font-size: 5.8vw;
+        padding: 1vw;
+        box-sizing: border-box;
+    }
+
+    .c180 .buttonAtHome {
+        align-self: unset; 
+        margin-left: 0vw;
+    }
+
+    .c280 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teeeeeeeeeeeeeeeeeeeeeexttttttt {
+        font-size: 31vw;
+        width: 35%;
+        line-height: 26vw;
+        margin-top: 15vw;
+        align-self: baseline;
+    }
+
+    .c280 img {
+        position: absolute;
+        top: 0;
+        right: 36%;
+        width: 11vw;
+    }
+
+    .c280 .addressNameE {
+        display: flex;
+        flex-direction: column;
+        margin-top: 6vw;
+        margin-right: 2vw;
+    }
+
+    .noT .name {
+        font-size: 5.3vw;
+        margin-bottom: 1vw;
+    }
+
+    .noT .address {
+        width: 54vw;
+        text-align: center;
+        font-size: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .noT .contacter {
+        display: flex;
+        font-size: 2.3vw;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .tt {
+        font-size: 9vw;
+        color: #B5B5B5;
+        margin-top: 5vw;
+        margin-bottom: 2vw;
+        text-align: center;
+    }
+}
