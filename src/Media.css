@@ -25,8 +25,8 @@
 
     .headForHome div {
         position: absolute;
-        left: 56.5%;
-        height: 31.3vw;
+        left: 60.5%;
+        height: 0vw;
         transform: rotate(18deg);
         width: 0.2vw;
         top: -6.5vw;
@@ -1050,5 +1050,61 @@
         position: absolute;
         top: 6vw;
         right: 30vw;
+    }
+
+    .firstSite {
+        height: 24.3vw !important;
+        left: 56.5% !important;
+        top: -2vw !important;
+    }
+
+    .teamCardPerPlayer {
+        display: flex;
+        padding: 10vw;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+
+    .teamCardPerPlayer img{
+        width: 36vw;
+    }
+
+    .teamCardPerPlayer .namemme {
+        font-size: 6vw;
+    }
+
+    .teamCardPerPlayer .text {
+        width: 100%;
+        font-size: 4vw;
+        color: #77777777;
+        margin-top: 5vw;
+    }
+
+    .teamCardPerPlayer .position {
+        font-size: 2vw;
+    }
+
+    .linksssForing img:nth-child(1) {
+        width: 25vw;
+        height: 5vw;
+    }
+
+    .linksssForing img:nth-child(2) {
+        width: 11vw;
+        height: 5vw;
+    }
+
+    .linksssForing img:nth-child(3) {
+        width: 9vw;
+        height: 5vw;
+    }
+
+    .linksssForing {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        flex-grow: none;
+        gap: 7vw;
+        margin-top: 5vw;
     }
 }

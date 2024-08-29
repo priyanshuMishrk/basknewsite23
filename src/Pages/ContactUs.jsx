@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
 import baskLogo from '../Images/bask.png'
 import arrow from '../Icons/arrow.svg'
+import medium from '../Icons/Medium.svg.png'
+import linkin from '../Icons/LinkedIn-Logos/In/Digital/Blue/2x/In-Blue-14-â¬Â«@2x.png'
+import inst from '../Icons/01 Static Glyph/03 Black Glyph/Instagram_Glyph_Black.svg'
+import { useNavigate } from "react-router-dom";
 
 function Cget() {
-
+    function goToLink(link){
+        window.open(link, "_blank" )
+      }
 
     return (
         <div className="c280">
@@ -42,6 +48,12 @@ Here
                          sampath@blackis.in <br/>
                         prabhakar@blackis.in
                         </div>
+                    </div>
+
+                    <div className="linksssForing">
+                        <img src={medium} onClick={() => goToLink('https://medium.com/@digital_19576')} alt="" />
+                        <img src={linkin} onClick={() => goToLink('https://www.linkedin.com/company/baskworldwide-creative/')} alt="" />
+                        <img src={inst} onClick={() => goToLink('https://www.instagram.com/weare_bask/')} alt="" />
                     </div>
                 </div>
 

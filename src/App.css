@@ -1029,3 +1029,65 @@ textarea::-ms-input-placeholder {
   height : 35.3vw !important;
   left: 46.5% !important;
 }
+
+.teamCardPerPlayer {
+  display: flex;
+  padding: 3vw;
+  justify-content: space-between;
+}
+
+
+.teamCardPerPlayer .text {
+  width: 50%;
+  font-size: 2vw;
+  color: #77777777;
+}
+
+.teamCardPerPlayer .namemme {
+  font-size: 4vw;
+}
+
+.teamCardPerPlayer .descr {
+  margin-left: -3vw;
+}
+
+.teamCardPerPlayer .closeButton {
+  position: absolute;
+  bottom: 0vw;
+  right: 35vw;
+  background-color: #FFD900;
+  padding: 1vw 1.5vw;
+  font-size: 2vw;
+  font-weight: 900;
+}
+
+.linksssForing img {
+  position: relative !important;
+  width: 5vw;
+  height: auto;
+  cursor: pointer;
+}
+
+.linksssForing {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  flex-grow: none;
+  gap: 2vw;
+  margin-top: 3vw;
+}
+
+.linksssForing img:nth-child(1) {
+  width: 9vw;
+  height: 2vw;
+}
+
+.linksssForing img:nth-child(2) {
+  width: 6vw;
+  height: 2vw;
+}
+
+.linksssForing img:nth-child(3) {
+  width: 6vw;
+  height: 2vw;
+}

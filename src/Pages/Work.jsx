@@ -119,12 +119,9 @@ function Work() {
 
         <div className="row2">
           <div className="text234kk bl">
-            When it came to delivering a great night
-            out experience , the Skyye stands above
-            (literally, too)every other bar in town. We
-            found the words to communicate this.
-            Garnishing it with a bit of sophistication
-            the place deserves.
+          Good food looks and tastes great when it
+was made on a Weber Grill. Even vegetables.
+The mouthwatering pictures says it all.
           </div>
 
           <img src={weberlogo4} onClick={() => setCurrentImg(weberlogo4)} className="cp" alt="" />
