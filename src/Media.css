@@ -901,4 +901,154 @@
         margin-bottom: 2vw;
         text-align: center;
     }
+
+    .nextPageTaker textarea {
+        font-size: 2.5vw;
+        width: 81%;
+        margin-top: 7vw;
+        resize: none;
+        outline: none;
+        height: 26vw;
+    }
+
+    .nextPageTakerrr textarea {
+        font-size: 1.5vw;
+        width: 77%;
+        resize: none;
+        margin-top: 11vw;
+        outline: none;
+        height: 26vw;
+    }
+
+    .c180 input {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+        width: 75vw;
+        font-size: 5.8vw;
+        margin-top: 0vw;
+    }
+
+    .c180 textarea {
+        outline: none;
+        resize: none;
+        width: 75vw;
+        font-size: 5.8vw;
+        padding: 1vw;
+        box-sizing: border-box;
+    }
+
+    .teeeeeeeeeeeeeeeeeeeeeexttttttt {
+        font-size: 39vw;
+        width: 35%;
+        line-height: 34vw;
+        margin-top: 15vw;
+        align-self: baseline;
+    }
+
+    .noT .name {
+        font-size: 6.3vw;
+        margin-bottom: 2vw;
+    }
+
+    .noT .address {
+        width: 81vw;
+        text-align: center;
+        font-size: 4vw;
+        margin-bottom: 3vw;
+    }
+
+    .noT .contacter {
+        display: flex;
+        font-size: 3.3vw;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tt {
+        font-size: 12vw;
+        color: #B5B5B5;
+        margin-top: 10vw;
+        margin-bottom: 2vw;
+        text-align: center;
+    }
+
+    .CaseStudy1 .Studies .textt {
+        color: #B5B5B5;
+        padding-left: 0;
+        font-size: 6vw;
+        padding-top: 35vw;
+        width: 85%;
+        margin-left: 10%;
+        border-top: none;
+        text-align: right;
+        padding-bottom: 15vw;
+        border-left: 1px solid black;
+    }
+
+    .CaseStudy2 .Studies .textt {
+        color: #B5B5B5;
+        padding-left: 17%;
+        font-size: 4vw;
+        padding-top: 30vw;
+        min-width: 55%;
+        max-width: 66%;
+        border-top: none;
+        margin-left: 10%;
+        text-align: right;
+        border-left: 1px solid black;
+        padding-bottom: 15vw;
+    }
+
+    .text234kk {
+        /* margin-top: 4vw; */
+        /* margin-left: 4vw; */
+        color: #B5B5B5;
+        font-size: 4vw;
+        width: 78vw;
+        align-self: flex-start;
+        position: absolute;
+        top: -78vw;
+        left: 14vw;
+        text-align: right;
+    }
+
+    .CaseStudy4 .column1 .row1 .textt {
+        color: #B5B5B5;
+        font-size: 4.5vw;
+        width: 69%;
+        margin-bottom: 3vw;
+        position: absolute;
+        top: 8vw;
+    }
+
+    .CaseStudy5 .column1 .texttty {
+        color: #B5B5B5;
+        font-size: 3vw;
+        padding: 1vw;
+        padding-left: 4vw;
+        position: absolute;
+        width: 40vw;
+        top: 70vw;
+        left: 8vw;
+    }
+
+    .CaseStudy5 .column3 {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin-top: 24.2vw;
+        margin-bottom: 36%;
+    }
+
+    .CaseStudy6 .column2 .row2 .textt {
+        color: #B5B5B5;
+        font-size: 3.8vw;
+        text-align: left;
+        margin-top: 2vw;
+        position: absolute;
+        top: 6vw;
+        right: 30vw;
+    }
 }

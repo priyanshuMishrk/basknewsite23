@@ -6,10 +6,23 @@ import suresh from '../Images/suresh.png'
 import sonicaa from '../Images/sonica.png'
 import gowri from '../Images/gouri.png'
 import { useNavigate } from "react-router-dom";
+import { useInput } from "../Context/formContext";
 
 
 
 function Teams() {
+
+    const { updateInput, inputValues } = useInput();
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setCurrent(file)
+    if (file) {
+      updateInput('resume', file);
+    }
+  };
+
+  const [current , setCurrent] = useState(inputValues['resume'])
 
     const naa = useNavigate()
 
@@ -110,6 +123,7 @@ function Teams() {
 
                     <div className="linker">
                         Upload Resume
+                    <input type="file" onChange={handleFileChange} accept=".pdf" />
                     </div>
 
                 </div>

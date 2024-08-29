@@ -27,12 +27,20 @@ import sheafferLogo from '../Images/sheafferLogo.png'
 import sheaffer1 from '../Images/sheaffer1.png'
 import sheaffer2 from '../Images/sheaffer2.png'
 import { useNavigate } from "react-router-dom";
+import { useInput } from "../Context/formContext";
 
 
 function Work() {
   const [currentImg, setCurrentImg] = useState('no')
 
-  const [current, setCurrent] = useState('')
+  const { updateInput, inputValues } = useInput();
+  const [current, setCurrent] = useState(inputValues['workPageInput'])
+  const handleChange = (e) => {
+    setCurrent(e.target.value)
+    console.log(inputValues['workPageInput'])
+    updateInput('workPageInput', e.target.value);
+  };
+
     const nava = useNavigate()
     function nextPage(){
         if (current != ''){
@@ -229,7 +237,7 @@ function Work() {
                 leave some love (Or hate).
             </div>
 
-            <textarea rows={2} type="text" onChange={(e) => setCurrent(e.value)}></textarea>
+            <textarea rows={2} type="text" value={current} onChange={handleChange}></textarea>
 
             <div className="buttonAtHome xb" onClick={nextPage}>
                     <div class="bottom-left"></div>

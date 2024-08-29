@@ -9,12 +9,16 @@ import Mission from './Pages/Mission.jsx';
 import Belief from './Pages/Belief.jsx';
 import Csend from './Pages/ContactSend.jsx';
 import Cget from './Pages/ContactUs.jsx';
+import { InputProvider } from './Context/formContext.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from './Utils/GT.jsx';
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop/>
+              <InputProvider>
             <Routes>
               {/* <Route path="/" element={<Home />} /> */}
               <Route path="/" element={<Home/>}/>
@@ -25,8 +29,8 @@ function App() {
               <Route path="/belief" element={<Belief/>}/>
               <Route path='/contact' element={<Csend/>} /> */}
               <Route path='/contactUs' element={<Cget/>} />
-
             </Routes>
+              </InputProvider>
       </BrowserRouter>
     </>
   );

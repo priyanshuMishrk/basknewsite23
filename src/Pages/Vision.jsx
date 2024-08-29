@@ -2,12 +2,48 @@ import React, { useEffect, useState } from "react";
 import baskLogo from '../Images/bask.png'
 import arrow from '../Icons/arrow.svg'
 import { useNavigate } from "react-router-dom";
+import { useInput } from "../Context/formContext";
 
 function Vision() {
-    const [current1, setCurrent1] = useState('')
-    const [current2, setCurrent2] = useState('')
-    const [current3, setCurrent3] = useState('')
-    const [current4, setCurrent4] = useState('')
+
+    const { updateInput, inputValues } = useInput();
+
+    const handleFileChange = (e) => {
+      const file = e.target.value;
+      if (file) {
+        setCurrent1(file)
+        updateInput('fullName', file);
+      }
+    };
+
+    const handleFileChange1 = (e) => {
+        const file = e.target.value;
+        if (file) {
+          setCurrent2(file)
+          updateInput('email', file);
+        }
+      };
+
+      const handleFileChange2 = (e) => {
+        const file = e.target.value;
+        if (file) {
+          setCurrent3(file)
+          updateInput('mobileNumber', file);
+        }
+      };
+
+      const handleFileChange3 = (e) => {
+        const file = e.target.value;
+        if (file) {
+          setCurrent4(file)
+          updateInput('message', file);
+        }
+      };
+
+    const [current1, setCurrent1] = useState(inputValues['fullName'])
+    const [current2, setCurrent2] = useState(inputValues['email'])
+    const [current3, setCurrent3] = useState(inputValues['mobileNumber'])
+    const [current4, setCurrent4] = useState(inputValues['message'])
     const nava = useNavigate()
     function nextPage(){
         if (current1 != '' && current2 != '' && current3 != '' && current4 != '' ){
@@ -16,6 +52,39 @@ function Vision() {
             alert('Please give your details')
         }
     }
+
+    const handleSubmit = async () => {
+        const formData = new FormData();
+    
+        // Append all inputs
+        Object.keys(inputValues).forEach((key) => {
+          if (inputValues[key] instanceof File) {
+            formData.append(key, inputValues[key]);
+          } else {
+            formData.append(key, inputValues[key]);
+          }
+        });
+    
+        try {
+          const response = await fetch('https://submit-form.com/GUStvTfFf', {
+            method: 'POST',
+            body: formData,
+          });
+    
+          if (response.ok) {
+            console.log('Form submitted successfully!');
+            nextPage()
+            // Handle successful submission
+          } else {
+            console.error('Form submission failed');
+            // Handle error
+          }
+        } catch (error) {
+          console.error('Error:', error);
+          // Handle network error
+        }
+      };
+    
 
     return (
 
@@ -93,11 +162,11 @@ them work.
             </div>
 
             <div className="formToContact ln">
-                <input type="text" className="ln" onChange={(e) => setCurrent1(e.target.value)} placeholder="Full Name" />
-                <input type="text" className="ln" onChange={(e) => setCurrent2(e.target.value)} placeholder="Email" />
-                <input type="number" className="ln" onChange={(e) => setCurrent3(e.target.value)} placeholder="Mobile Number" />
-                <textarea placeholder="Message" className="ln" onChange={(e) => setCurrent4(e.value)} rows={3}></textarea>
-                <div className="buttonAtHome xb" onClick={() => nextPage()}>
+                <input type="text" className="ln" value={current1} onChange={handleFileChange} placeholder="Full Name" />
+                <input type="text" className="ln" value={current2} onChange={handleFileChange1} placeholder="Email" />
+                <input type="number" className="ln" value={current3} onChange={handleFileChange2} placeholder="Mobile Number" />
+                <textarea placeholder="Message" value={current4} className="ln" onChange={handleFileChange3} rows={3}></textarea>
+                <div className="buttonAtHome xb"  onClick={() => handleSubmit()}>
                     <div class="bottom-left"></div>
                     <div class="bottom-right"></div>
                     Submit
