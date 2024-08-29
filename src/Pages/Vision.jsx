@@ -64,21 +64,35 @@ function Vision() {
             formData.append(key, inputValues[key]);
           }
         });
+
+        formData.append('access_key', '7e37db8d-04a7-4b16-9592-dfedd1ea3897')
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
     
         try {
-          const response = await fetch('https://submit-form.com/GUStvTfFf', {
-            method: 'POST',
-            body: formData,
-          });
-    
-          if (response.ok) {
-            console.log('Form submitted successfully!');
-            nextPage()
-            // Handle successful submission
-          } else {
-            console.error('Form submission failed');
-            // Handle error
-          }
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    
+                } else {
+                    console.log(response);
+                }
+            })
+            .catch(error => {
+                console.log(error);
+            })
+            .then(function() {
+                nextPage()
+            });
         } catch (error) {
           console.error('Error:', error);
           // Handle network error
@@ -224,11 +238,12 @@ them work.
             </div>
 
             <div className="formToContact ln">
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
                 <input type="text" className="ln" value={current1} onChange={handleFileChange} placeholder="Full Name" />
                 <input type="text" className="ln" value={current2} onChange={handleFileChange1} placeholder="Email" />
                 <input type="number" className="ln" value={current3} onChange={handleFileChange2} placeholder="Mobile Number" />
                 <textarea placeholder="Message" value={current4} className="ln" onChange={handleFileChange3} rows={3}></textarea>
-                <div className="buttonAtHome xb"  onClick={handleSubmitOriginal}>
+                <div className="buttonAtHome xb"  onClick={handleSubmit}>
                     <div class="bottom-left"></div>
                     <div class="bottom-right"></div>
                     Submit
