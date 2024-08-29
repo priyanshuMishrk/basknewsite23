@@ -85,7 +85,6 @@ function Vision() {
         }
       };
 
-
       const handleSubmitOriginal = (e) => {
         e.preventDefault();
     
@@ -95,19 +94,58 @@ function Vision() {
         form.enctype = 'multipart/form-data';
     
         Object.keys(inputValues).forEach((key) => {
-          const input = document.createElement(
-            inputValues[key] instanceof File ? 'input' : 'textarea'
-          );
-          input.type = inputValues[key] instanceof File ? 'file' : 'hidden';
-          input.name = key;
-          input.value = inputValues[key];
-          form.appendChild(input);
+          let inputElement;
+    
+          if (inputValues[key] instanceof File) {
+            // Handle file input
+            inputElement = document.createElement('input');
+            inputElement.type = 'file';
+            inputElement.name = key;
+            // Files should be appended differently; typically, you'd need to set files to an input programmatically.
+            // Since you cannot set file inputs programmatically for security reasons, this approach assumes a direct submission.
+          } else if (typeof inputValues[key] === 'string' && inputValues[key].length > 100) {
+            // Handle long text inputs as a textarea
+            inputElement = document.createElement('textarea');
+            inputElement.name = key;
+            inputElement.value = inputValues[key];
+          } else {
+            // Handle standard input
+            inputElement = document.createElement('input');
+            inputElement.type = 'hidden';
+            inputElement.name = key;
+            inputElement.value = inputValues[key];
+          }
+    
+          form.appendChild(inputElement);
         });
     
         document.body.appendChild(form);
         form.submit();
         nextPage()
       };
+
+    //   const handleSubmitOriginal = (e) => {
+    //     e.preventDefault();
+    
+    //     const form = document.createElement('form');
+    //     form.action = 'https://submit-form.com/GUStvTfFf';
+    //     form.method = 'POST';
+    //     form.enctype = 'multipart/form-data';
+    
+    //     Object.keys(inputValues).forEach((key) => {
+    //       const input = document.createElement(
+    //         inputValues[key] instanceof File ? 'input' : 'textarea'
+    //       );
+    //       input.type = inputValues[key] instanceof File ? 'file' : 'hidden';
+    //       input.name = key;
+    //       input.value = inputValues[key];
+    //       form.appendChild(input);
+    //     });
+    
+    //     document.body.appendChild(form);
+    //     form.submit();
+    //     nextPage()
+    //   };
     
 
     return (
