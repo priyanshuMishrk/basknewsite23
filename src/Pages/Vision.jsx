@@ -190,7 +190,7 @@ them work.
                 <input type="text" className="ln" value={current2} onChange={handleFileChange1} placeholder="Email" />
                 <input type="number" className="ln" value={current3} onChange={handleFileChange2} placeholder="Mobile Number" />
                 <textarea placeholder="Message" value={current4} className="ln" onChange={handleFileChange3} rows={3}></textarea>
-                <div className="buttonAtHome xb"  onClick={() => handleSubmitOriginal()}>
+                <div className="buttonAtHome xb"  onClick={handleSubmitOriginal}>
                     <div class="bottom-left"></div>
                     <div class="bottom-right"></div>
                     Submit
