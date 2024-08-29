@@ -84,6 +84,30 @@ function Vision() {
           // Handle network error
         }
       };
+
+
+      const handleSubmitOriginal = (e) => {
+        e.preventDefault();
+    
+        const form = document.createElement('form');
+        form.action = 'https://submit-form.com/GUStvTfFf';
+        form.method = 'POST';
+        form.enctype = 'multipart/form-data';
+    
+        Object.keys(inputValues).forEach((key) => {
+          const input = document.createElement(
+            inputValues[key] instanceof File ? 'input' : 'textarea'
+          );
+          input.type = inputValues[key] instanceof File ? 'file' : 'hidden';
+          input.name = key;
+          input.value = inputValues[key];
+          form.appendChild(input);
+        });
+    
+        document.body.appendChild(form);
+        form.submit();
+        nextPage()
+      };
     
 
     return (
@@ -166,7 +190,7 @@ them work.
                 <input type="text" className="ln" value={current2} onChange={handleFileChange1} placeholder="Email" />
                 <input type="number" className="ln" value={current3} onChange={handleFileChange2} placeholder="Mobile Number" />
                 <textarea placeholder="Message" value={current4} className="ln" onChange={handleFileChange3} rows={3}></textarea>
-                <div className="buttonAtHome xb"  onClick={() => handleSubmit()}>
+                <div className="buttonAtHome xb"  onClick={() => handleSubmitOriginal()}>
                     <div class="bottom-left"></div>
                     <div class="bottom-right"></div>
                     Submit
