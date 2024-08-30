@@ -234,7 +234,7 @@ The mouthwatering pictures says it all.
                 leave some love (Or hate).
             </div>
 
-            <textarea rows={2} type="text" value={current} onChange={handleChange}></textarea>
+            <textarea rows={2} type="text" className="ln" value={current} onChange={handleChange}></textarea>
 
             <div className="buttonAtHome xb" onClick={nextPage}>
                     <div class="bottom-left"></div>

@@ -11,6 +11,20 @@ function Cget() {
         window.open(link, "_blank" )
       }
 
+      useEffect(() => {
+        const handleVisibilityChange = () => {
+          if (document.visibilityState === 'visible') {
+            window.location.reload();
+          }
+        };
+    
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+    
+        return () => {
+          document.removeEventListener('visibilitychange', handleVisibilityChange);
+        };
+      }, []);
+
     return (
         <div className="c280">
             <img src={baskLogo} alt="" />
@@ -24,7 +38,7 @@ Here
             <div className="addressNameE">
                 <div className="noT">
                     <div className="name xb">
-                    Bask Creative Venture Pvt. Ltd.
+                    Bask Creative Ventures Pvt. Ltd.
                     </div>
 
                     <div className="address gl">

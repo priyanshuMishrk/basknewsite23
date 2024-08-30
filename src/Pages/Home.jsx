@@ -70,7 +70,7 @@ function Home() {
                     Write something (anything) in the space below and click the submit button to see some exciting work.
                 </div>
 
-                <textarea rows={2} onChange={handleChange} value={current} type="text" className="" />
+                <textarea rows={2} onChange={handleChange} value={current} type="text" className="ln" />
 
                 <div className="buttonAtHome xb" onClick={nextPage}>
                     <div class="bottom-left"></div>

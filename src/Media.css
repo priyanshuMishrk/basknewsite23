@@ -1107,4 +1107,22 @@
         gap: 7vw;
         margin-top: 5vw;
     }
+
+    .teamCardPerPlayer .text {
+        width: 100%;
+        font-size: 4vw;
+        color: #77777777;
+        margin-top: 5vw;
+        letter-spacing: 1px;
+    }
+
+    .teamCardPerPlayer .closeButton {
+        position: absolute;
+        bottom: 0vw;
+        right: 35vw;
+        background-color: #FFD900;
+        padding: 2vw 3.5vw;
+        font-size: 5vw;
+        font-weight: 900;
+    }
 }
