@@ -7,9 +7,17 @@ import inst from '../Icons/01 Static Glyph/03 Black Glyph/Instagram_Glyph_Black.
 import { useNavigate } from "react-router-dom";
 
 function Cget() {
-    function goToLink(link){
-        window.open(link)
-      }
+    const goToLink = (link) => {
+        const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+    
+        if (isMobile) {
+          // Attempt to open the link in the app (assuming it's a URL scheme or a custom app link)
+          window.location.href = link;
+        } else {
+          // Open the link in a new tab for non-mobile users
+          window.open(link, '_blank');
+        }
+      };
 
       useEffect(() => {
         const handleVisibilityChange = () => {
