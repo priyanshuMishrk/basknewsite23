@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 function Cget() {
     function goToLink(link){
-        window.open(link, "_blank" )
+        window.open(link)
       }
 
       useEffect(() => {
