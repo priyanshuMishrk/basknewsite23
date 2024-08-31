@@ -128,6 +128,14 @@
   margin-top: 5vw;
   padding:1vw 4vw;
   margin-bottom: 2vw;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.disableButtonAtHome {
+  background-color: grey !important;
+  cursor: none;
 }
 
 .buttonAtHome::before,

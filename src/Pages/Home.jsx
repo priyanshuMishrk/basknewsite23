@@ -72,7 +72,7 @@ function Home() {
 
                 <textarea rows={2} onChange={handleChange} value={current} type="text" className="ln" />
 
-                <div className="buttonAtHome xb" onClick={nextPage}>
+                <div className={`${current === '' && 'disableButtonAtHome' } buttonAtHome xb`} onClick={nextPage}>
                     <div class="bottom-left"></div>
                     <div class="bottom-right"></div>
                     Submit

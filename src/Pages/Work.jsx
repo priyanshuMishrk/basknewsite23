@@ -236,7 +236,7 @@ The mouthwatering pictures says it all.
 
             <textarea rows={2} type="text" className="ln" value={current} onChange={handleChange}></textarea>
 
-            <div className="buttonAtHome xb" onClick={nextPage}>
+            <div className={`${current === '' && 'disableButtonAtHome' } buttonAtHome xb`} onClick={nextPage}>
                     <div class="bottom-left"></div>
                     <div class="bottom-right"></div>
                     Submit
