@@ -7,7 +7,7 @@ import sonicaa from '../Images/sonica.png'
 import gowri from '../Images/gouri.png'
 import { useNavigate } from "react-router-dom";
 import { useInput } from "../Context/formContext";
-
+import Vision from "./Vision";
 
 
 function Teams() {
@@ -59,8 +59,37 @@ function Teams() {
     ]
 
 
-    if (currentMember  != 10){
-        return <div className="teamCardPerPlayer">
+    // if (currentMember  != 10){
+    //     return <div className="teamCardPerPlayer">
+    //             <div className="closeButton" onClick={() => setCurrentMember(10)}>
+    //                 X
+    //             </div>
+    //             <div className="text xb">
+    //                 {teamData[currentMember].content}
+    //             </div>
+
+    //             <div className="member1">
+    //                 <img src={teamData[currentMember].img} alt="" />
+    //                 <div className="descr">
+    //                     <div className="namemme xb">
+    //                         {teamData[currentMember].title.split(' ')[0]}
+    //                         <br/>
+    //                         {teamData[currentMember].title.split(' ')[1]}
+    //                     </div>
+    //                     <div className="position gm">
+    //                         Executive creative director
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //     </div>
+    // }
+
+    return (
+        <div>
+
+            {
+                currentMember != 10 && 
+                <div className="teamCardPerPlayer">
                 <div className="closeButton" onClick={() => setCurrentMember(10)}>
                     X
                 </div>
@@ -82,10 +111,8 @@ function Teams() {
                     </div>
                 </div>
         </div>
-    }
+            }
 
-    return (
-        <div>
             <div className="firstPageInTeams xb">
                     <img src={baskLogo} alt="" />
                 {/* <div className="aksdjiad">
@@ -186,13 +213,9 @@ function Teams() {
 
                 </div>
 
-                <div className="whatsssssnext xb" onClick={() => {naa('/vision')}}>
-                What’s next?
-                </div>
-
             </div>
 
-
+            <Vision/>
         </div>
     );
 }

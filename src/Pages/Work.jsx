@@ -41,29 +41,70 @@ function Work() {
     updateInput('workPageInput', e.target.value);
   };
 
-    const nava = useNavigate()
-    function nextPage(){
-        if (current != ''){
-                nava('/team')
-        } else {
-            alert('Please give your inputs')
-        }
+  const nava = useNavigate()
+  function nextPage() {
+    if (current != '') {
+      nava('/team')
+    } else {
+      alert('Please give your inputs')
     }
+  }
+  // const [scrollId, setScrollId] = useState(0)
 
   function close() {
-    setCurrentImg('no')
+    // let id;
+    setCurrentImg('no');
+
+    // if (currentImg === levi1){
+    //     id = 1
+    // } else if  (currentImg === sky1 || currentImg === sky2 || currentImg === sky3) {
+    //   id = 2
+    // } else if  (currentImg === weberlogo1 || currentImg === weberlogo2 || currentImg === weberlogo3 || currentImg === weberlogo4 || currentImg === weberlogo5) {
+    //   id = 3
+    // } else if ( currentImg === zlate1 || currentImg === zlate2 || currentImg === zlate3 || currentImg === zlate4){
+    //   id = 4
+    // } else if (currentImg === peps1 || currentImg === peps2 || currentImg === peps3 || currentImg === peps4 || currentImg === peps5){
+    //   id = 5
+    // } else if (currentImg === sheaffer1 || currentImg === sheaffer2){
+    //   id = 6
+    // }
+
+    // console.log(id)
+
+    // setTimeout(() => {
+    //   if (id) {
+    //     console.log(id, "sk")
+    //     const element = document.getElementById(scrollId);
+    //     if (element) {
+    //         element.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    // }
+    // }, 100); // 500 milliseconds = 0.5 seconds
   }
 
-  if (currentImg !== 'no') {
-    return (<div className="lighthouse">
-      <span className="closeIconInLightHous cp gb" onClick={close}>X</span>
-      <img src={currentImg} alt="" />
-    </div>)
-  }
+//   useEffect(() => {
+//     if (scrollId) {
+//         const element = document.getElementById(scrollId);
+//         if (element) {
+//             element.scrollIntoView({ behavior: 'smooth' });
+//         }
+//     }
+// }, [scrollId]);
+
+  // if (currentImg !== 'no') {
+  //   return ()
+  // }
+
 
   return (
     <div>
-      <div className="CaseStudy1">
+      {
+        currentImg !== 'no' && <div className="lighthouse">
+        <span className="closeIconInLightHous cp gb" onClick={close}>X</span>
+        <img src={currentImg} alt="" />
+      </div>
+      }
+      <div className="CaseStudy1" id="1">
         <img src={baskLogo} className="baskLogoC1" alt="" />
 
         <div className="Studies">
@@ -81,7 +122,7 @@ function Work() {
 
       </div>
 
-      <div className="CaseStudy2">
+      <div className="CaseStudy2" id="2">
         <img src={baskLogo} className="baskLogoC1" alt="" />
         <img src={skyeLogo} className="skyeelogoC1" alt="" />
 
@@ -107,7 +148,7 @@ function Work() {
 
       </div>
 
-      <div className="CaseStudy3">
+      <div className="CaseStudy3" id="3">
         <div className="row1">
           <img src={baskLogo} alt="" />
 
@@ -119,9 +160,9 @@ function Work() {
 
         <div className="row2">
           <div className="text234kk bl">
-          Good food looks and tastes great when it
-was made on a Weber Grill. Even vegetables.
-The mouthwatering pictures says it all.
+            Good food looks and tastes great when it
+            was made on a Weber Grill. Even vegetables.
+            The mouthwatering pictures says it all.
           </div>
 
           <img src={weberlogo4} onClick={() => setCurrentImg(weberlogo4)} className="cp" alt="" />
@@ -130,7 +171,7 @@ The mouthwatering pictures says it all.
         </div>
       </div>
 
-      <div className="CaseStudy4">
+      <div className="CaseStudy4" id="4">
         <div className="column1">
           <div className="row1">
 
@@ -160,7 +201,7 @@ The mouthwatering pictures says it all.
         </div>
       </div>
 
-      <div className="CaseStudy5">
+      <div className="CaseStudy5" id="5">
         <div className="column1">
           <div>
             <img src={baskLogo} alt="" />
@@ -200,47 +241,47 @@ The mouthwatering pictures says it all.
 
       </div>
 
-      <div className="CaseStudy6">
+      <div className="CaseStudy6" id="6">
         <div className="column1">
-            <img src={sheaffer1} onClick={() => setCurrentImg(sheaffer1)} className='cp' alt="" />
+          <img src={sheaffer1} onClick={() => setCurrentImg(sheaffer1)} className='cp' alt="" />
         </div>
 
         <div className="column2">
           <div className="row1">
-                <img src={baskLogo} alt="" />
+            <img src={baskLogo} alt="" />
           </div>
 
           <div className="row2">
-              <img src={sheaffer2} onClick={() => setCurrentImg(sheaffer2)} className='cp' alt="" />
-              <img src={sheafferLogo} alt="" />
-              <div className="textt bl">
-              The Write stuff.<br/>
+            <img src={sheaffer2} onClick={() => setCurrentImg(sheaffer2)} className='cp' alt="" />
+            <img src={sheafferLogo} alt="" />
+            <div className="textt bl">
+              The Write stuff.<br />
               We agree.
-              </div>
+            </div>
           </div>
         </div>
       </div>
 
 
       <div className="nextPageTakerrr">
-            <img src={baskLogo} className="backLogoooo" alt="" />
+        <img src={baskLogo} className="backLogoooo" alt="" />
         {/* <div className="lllsassd">
             <div></div>
         </div> */}
 
 
-            <div className="body ln">
-                Now that you have seen our work,<br/>
-                leave some love (Or hate).
-            </div>
+        <div className="body ln">
+          Now that you have seen our work,<br />
+          leave some love (Or hate).
+        </div>
 
-            <textarea rows={2} type="text" className="ln" value={current} onChange={handleChange}></textarea>
+        <textarea rows={2} type="text" className="ln" value={current} onChange={handleChange}></textarea>
 
-            <div className={`${current === '' && 'disableButtonAtHome' } buttonAtHome xb`} onClick={nextPage}>
-                    <div class="bottom-left"></div>
-                    <div class="bottom-right"></div>
-                    Submit
-                </div>
+        <div className={`${current === '' && 'disableButtonAtHome'} buttonAtHome xb`} onClick={nextPage}>
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+          Submit
+        </div>
       </div>
     </div>
   );

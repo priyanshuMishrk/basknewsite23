@@ -238,6 +238,11 @@
   justify-content: center;
   align-items: center;
   max-height: 100vh;
+  position: fixed;
+  background-color: white;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 2345;
 }
 
 .lighthouse img {
@@ -705,6 +710,7 @@
 
 .uploadeer {
   position: relative;
+  border-bottom: 10px solid black;
 }
 
 .uploadeer img{
@@ -1040,8 +1046,13 @@ textarea::-ms-input-placeholder {
 
 .teamCardPerPlayer {
   display: flex;
-  padding: 3vw;
+  padding: 6vh 3vw;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1999;
+  background-color: white;
+  max-height: 100vh;
+  height: 88vh;
 }
 
 
