@@ -1061,7 +1061,8 @@
     .teamCardPerPlayer {
         display: flex;
         padding: 10vw;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 2vw;
         flex-direction: column-reverse;
     }
 
