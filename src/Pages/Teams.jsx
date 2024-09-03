@@ -5,6 +5,7 @@ import cp from '../Images/prabhakar.png'
 import suresh from '../Images/suresh.png'
 import sonicaa from '../Images/sonica.png'
 import gowri from '../Images/gouri.png'
+import priyanshu from '../Images/priyanshu.png'
 import { useNavigate } from "react-router-dom";
 import { useInput } from "../Context/formContext";
 import Vision from "./Vision";
@@ -34,28 +35,39 @@ function Teams() {
         {
             title : "Sampath Kumar",
             content : "Sampath has varied experience in working with some of the finest creative agencies in India including Enterprise Advertising, Ambience, JWT and Contract. Over a caree spanning 30 years, he has worked on many multi-national as well as leading Indian Brands. For the last 15 years, he has been creating and helming his own ventures including start-ups in the charity and food & beverages space. With Bask creative, his latest venture, he is intent on creating the agency of his dreams. Where the finest creative minds working in an agency environment unlike any other, produce work that creates successful brands of today.",
-            img : sampath
+            img : sampath,
+            post : 'Founder'
           },
           {
             title : "C.P. Prabhakaran",
             content : "Prabhakaran is the consummate advertising and marketing professional. With 3 decades of experience both on the agency side as well as the brand side he has worked with some of the leading advertising agencies in Bangalore including Saatchi &Saatchi, Maa Bozzel, and Everest having later moved on to work on the brand side with RMZ Corp, Bangalore's leading Corporate and Residential developer, where he spent 10 years as head of marketing communication for both, RMZ Homes and Commercial spaces.",
-            img : cp
+            img : cp,
+            post : 'Director-business'
           },
           {
             title : "Suresh Manian",
             content : "Suresh Manian is a seasoned copywriter and creative director. His 40 year journey in the industry has seen him work in multiple agencies, Ogilvy, Lintas, Rediffusion, Enterprise, Contract to name a few. He also cofounded Fisheye Creative Solutions, a Bangalore based agency, way back in 1999. While advertising has always been his profession, Suresh has written Tamil dialogues for a film (Quick Gun Murugan), and dabbled in text analytics and insight mining. Suresh is married to Malini, and has two daughters and two dogs, and lives in Bangalore.",
-            img : suresh
+            img : suresh,
+            post : 'Executive creative director'
           },
           {
             title : "Sonica Singh",
             content : "Sonica brings a strategic vision to everything digital. Campaigns, Performance Marketing, Content Strategy, Social Media Strategy, SEO Strategy, Marketing Automation Strategy Analytics. Her experiences include working with micro, small, and mid-sized clients to large corporations through her agency engagements. Before she dived into digital communication she had various sales and marketing roles with Taj Hotels, ITC Hotels, The Ritz-Carlton Hotel Company, and Accor Hotels.",
-            img : sonicaa
+            img : sonicaa,
+            post : 'Head-digital'
           },
           {
             title : "Gowri Subramoniam",
             content : "Gowri Subramoniam is a Multidisciplinary Designer with a background in Architecture and a career spanning Digital Design, Strategy, Art Direction, Photography, and Videography. Over the past seven years, she has worked with over 40 brands, predominantly in the F&B space. She is currently “bask”ing as the Head of Digital Content.",
-            img : gowri
+            img : gowri,
+            post : 'Head-digital content'
           },
+          {
+            title : "Priyanshu Mishra",
+            content : "Priyanshu is a full stack developer, specializing in Express and React JS. He is a hoarder of horror cinema, and is rarely seen without his headphones on. Priyanshu is studying for his BCA while trying to set a record in the number of genres one can fit into a single week of reading. He enjoys taking long walks to unwind and loves exploring local cafes for unique coffee blends.When he's not crafting seamless web applications, you'll find him immersed in a vast array of anime, always on the lookout for the latest trends and technologies in the coding world. ",
+            img : priyanshu,
+            post : 'Senior Software Developer'
+          }
     ]
 
 
@@ -106,7 +118,7 @@ function Teams() {
                             {teamData[currentMember].title.split(' ')[1]}
                         </div>
                         <div className="position gm">
-                            Executive creative director
+                            {teamData[currentMember].post}
                         </div>
                     </div>
                 </div>
@@ -191,6 +203,19 @@ function Teams() {
                         </div>
                         <div className="position gm">
                             Head-digital content
+                        </div>
+                    </div>
+                </div>
+
+                <div className="member2" onClick={() => setCurrentMember(5)}>
+                    <img src={priyanshu} alt="" />
+                    <div className="descr">
+                        <div className="namemme xb">
+                            Priyanshu<br />
+                            Mishra
+                        </div>
+                        <div className="position gm">
+                            Senior Software Developer
                         </div>
                     </div>
                 </div>

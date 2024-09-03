@@ -50,8 +50,8 @@ Here
                     </div>
 
                     <div className="address gl">
-                    No. 3-B, 3rd Floor, Platinum Square, NNo. 86,
-                    Cloes Road, Frazer Town, Bangalore 560 005
+                    No. 3-B, 3rd Floor, Platinum Square, No. 86,
+                    Coles Road, Frazer Town, Bangalore 560 005
                     </div>
 
                     <div className="contacter gl">
